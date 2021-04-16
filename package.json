@@ -22,7 +22,7 @@
     "generate-version": "node ./scripts/version.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "rm -rf ./storybook && build-storybook -o storybook",
-    "deploy-storybook": "storybook-to-ghpages --branch=storybook --out=storybook"
+    "deploy-storybook": "storybook-to-ghpages --ci --out=storybook"
   },
   "dependencies": {
     "@react-pdf/renderer": "^2.0.4",
