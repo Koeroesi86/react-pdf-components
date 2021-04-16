@@ -1,0 +1,35 @@
+language: node_js
+node_js:
+  - "12"
+env:
+  global:
+    - NODE_ENV="development"
+    - YARN_CACHE_FOLDER=$TRAVIS_BUILD_DIR/.cache/yarn
+    - TRAVIS_TAG="$(git rev-parse --short ${TRAVIS_COMMIT})"
+cache:
+  directories:
+    - node_modules
+    - .cache
+    - .dist
+jobs:
+  include:
+    - stage: Test
+      script:
+        - yarn lint
+        - yarn test
+#    - stage: Release package
+#      if: branch = main
+#      script:
+#        - yarn build
+#        - yarn generate-version
+#      deploy:
+#        on:
+#          branch: main
+#        provider: npm
+#        skip_cleanup: true
+#        email: $NPM_EMAIL
+#        api_key: $NPM_TOKEN
+#    - stage: Storybook
+#      script:
+#        - yarn lint
+#        - yarn test
