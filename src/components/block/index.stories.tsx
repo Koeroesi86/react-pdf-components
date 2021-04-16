@@ -12,7 +12,7 @@ import Block, { BlockComponentProps } from "./index";
 
 export default {
   title: "Example/Block",
-  decorators: [decorator],
+  decorators: [decorator("A6")],
   component: Block,
   argTypes: {
     backgroundColor: { control: "color" },

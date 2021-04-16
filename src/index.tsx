@@ -19,14 +19,3 @@ export { default as IconFolder } from "./components/icon-folder";
 export { default as IconGithub } from "./components/icon-github";
 
 export * as ReactPDF from "@react-pdf/renderer";
-export { o } from "@app-types";
-export { ai } from "@app-types";
-export { jc } from "@app-types";
-export { fd } from "@app-types";
-export { pos } from "@app-types";
-export { overflow } from "@app-types";
-export { alignItems } from "@app-types";
-export { justifyContent } from "@app-types";
-export { flexDirection } from "@app-types";
-export { flexGrow } from "@app-types";
-export { position } from "@app-types";

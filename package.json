@@ -20,7 +20,7 @@
     "test": "jest",
     "lint": "eslint --cache --cache-location .cache/eslint/ --ext .ts,.tsx src",
     "generate-version": "node ./scripts/version.js",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "build-storybook --watch -o docs",
     "build-storybook": "rm -rf ./docs && build-storybook -o docs",
     "deploy-storybook": "storybook-to-ghpages --ci --out=docs"
   },
@@ -35,7 +35,6 @@
     "@storybook/addon-essentials": "^6.2.8",
     "@storybook/addon-links": "^6.2.8",
     "@storybook/react": "^6.2.8",
-    "@storybook/storybook-deployer": "^2.8.7",
     "@testing-library/react": "^11.2.6",
     "@types/jest": "^26.0.22",
     "@types/react": "^17.0.3",
@@ -46,7 +45,7 @@
     "dts-bundle-generator": "^5.9.0",
     "eslint": "^7.24.0",
     "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-prettier": "^8.2.0",
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
@@ -56,12 +55,12 @@
     "prettier": "^2.2.1",
     "prop-types": "^15.7.2",
     "react-dom": "^17.0.2",
-    "ts-jest": "^26.5.4",
+    "ts-jest": "^26.5.5",
     "ts-loader": "^8.1.0",
     "tsconfig-paths-webpack-plugin": "^3.5.1",
     "typescript": "^4.2.4",
     "uuid": "^8.3.2",
-    "webpack": "^5.31.2",
+    "webpack": "^5.33.2",
     "webpack-cli": "^4.6.0"
   }
 }

@@ -22,7 +22,7 @@ module.exports = {
     path: path.resolve(__dirname, "./dist/package"),
     filename: "[name].js",
     library: {
-      type: "commonjs2",
+      type: "umd",
     },
   },
   resolve: {
