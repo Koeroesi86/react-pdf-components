@@ -29,7 +29,18 @@ jobs:
 #        skip_cleanup: true
 #        email: $NPM_EMAIL
 #        api_key: $NPM_TOKEN
-#    - stage: Storybook
-#      script:
-#        - yarn lint
-#        - yarn test
+    - stage: Storybook
+      if: branch = main
+#      env:
+#        - GH_TOKEN=$GITHUB_TOKEN
+      script:
+        - yarn build-storybook
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+        keep_history: true
+        target_branch: storybook
+        local_dir: storybook
+        on:
+          branch: main
