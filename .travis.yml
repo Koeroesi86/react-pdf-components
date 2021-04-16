@@ -34,7 +34,7 @@ jobs:
 #      env:
 #        - GH_TOKEN=$GITHUB_TOKEN
       script:
-        - yarn build-storybook
+        - yarn build-storybook --ci
       deploy:
         provider: pages
         skip_cleanup: true
