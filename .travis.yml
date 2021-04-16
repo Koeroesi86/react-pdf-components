@@ -42,8 +42,7 @@ jobs:
         provider: pages
         skip_cleanup: true
         github_token: $GH_TOKEN
-        keep_history: true
+        keep_history: false
         target_branch: storybook
-        local_dir: storybook
         on:
           branch: main

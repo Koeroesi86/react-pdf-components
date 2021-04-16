@@ -21,8 +21,8 @@
     "lint": "eslint --cache --cache-location .cache/eslint/ --ext .ts,.tsx src",
     "generate-version": "node ./scripts/version.js",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "rm -rf ./storybook && build-storybook -o storybook",
-    "deploy-storybook": "storybook-to-ghpages --ci --out=storybook"
+    "build-storybook": "rm -rf ./docs && build-storybook -o docs",
+    "deploy-storybook": "storybook-to-ghpages --ci --out=docs"
   },
   "dependencies": {
     "@react-pdf/renderer": "^2.0.4",
