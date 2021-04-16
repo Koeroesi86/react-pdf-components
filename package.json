@@ -9,6 +9,7 @@
     "name": "Krisztian Korosi",
     "url": "https://github.com/Koeroesi86"
   },
+  "homepage": "https://koeroesi86.github.io/react-pdf-components/",
   "repository": "github:Koeroesi86/react-pdf-components",
   "publishConfig": {
     "access": "public"
