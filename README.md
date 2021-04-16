@@ -7,7 +7,6 @@
 
 ### Usage
 
-TODO
 ```shell
 yarn add @koeroesi86/react-pdf-components
 ```

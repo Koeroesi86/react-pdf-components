@@ -2,9 +2,9 @@ import React from "react";
 import { IconProps, IconPropTypes } from "@app-types";
 import { Path, Svg } from "@react-pdf/renderer";
 
-export type IconImageComponentProps = IconProps;
+export type IconStarComponentProps = IconProps;
 
-const IconStar: React.FC<IconImageComponentProps> = ({
+const IconStar: React.FC<IconStarComponentProps> = ({
   children,
   width,
   height,

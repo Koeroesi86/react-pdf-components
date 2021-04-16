@@ -11,7 +11,7 @@ import {
 import Block, { BlockComponentProps } from "./index";
 
 export default {
-  title: "Example/Block",
+  title: "Example/Blocks/Block",
   decorators: [decorator("A6")],
   component: Block,
   argTypes: {
@@ -38,7 +38,7 @@ export default {
     width: 60,
     height: 60,
   },
-} as Meta;
+} as Meta<BlockComponentProps>;
 
 const Template: Story<BlockComponentProps> = (args) => <Block {...args} />;
 
