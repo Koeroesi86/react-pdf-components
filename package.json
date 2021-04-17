@@ -1,0 +1,65 @@
+{
+  "name": "@koeroesi86/react-pdf-components",
+  "version": "1.0.0",
+  "main": "dist/package",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "description": "React PDF components",
+  "author": {
+    "name": "Krisztian Korosi",
+    "url": "https://github.com/Koeroesi86"
+  },
+  "homepage": "https://koeroesi86.github.io/react-pdf-components/",
+  "repository": "github:Koeroesi86/react-pdf-components",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "yarn install --frozen-lockfile && rm -rf ./dist && dts-bundle-generator --config dts.config.js && webpack",
+    "dev": "yarn build && webpack --watch --progress",
+    "test": "jest",
+    "lint": "eslint --cache --cache-location .cache/eslint/ --ext .ts,.tsx src",
+    "generate-version": "node ./scripts/version.js",
+    "storybook": "build-storybook --watch -o docs",
+    "build-storybook": "rm -rf ./docs && build-storybook -o docs"
+  },
+  "dependencies": {
+    "@react-pdf/renderer": "^2.0.4",
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@storybook/addon-actions": "^6.2.8",
+    "@storybook/addon-docs": "^6.2.8",
+    "@storybook/addon-essentials": "^6.2.8",
+    "@storybook/addon-links": "^6.2.8",
+    "@storybook/react": "^6.2.8",
+    "@testing-library/react": "^11.2.6",
+    "@types/jest": "^26.0.22",
+    "@types/react": "^17.0.3",
+    "@types/uuid": "^8.3.0",
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "@typescript-eslint/parser": "^4.21.0",
+    "babel-loader": "^8.2.2",
+    "dts-bundle-generator": "^5.9.0",
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "prop-types": "^15.7.2",
+    "react-dom": "^17.0.2",
+    "ts-jest": "^26.5.5",
+    "ts-loader": "^8.1.0",
+    "tsconfig-paths-webpack-plugin": "^3.5.1",
+    "typescript": "^4.2.4",
+    "uuid": "^8.3.2",
+    "webpack": "^5.33.2",
+    "webpack-cli": "^4.6.0"
+  }
+}

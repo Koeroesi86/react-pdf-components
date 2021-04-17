@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<IconFolder/> should render 1`] = `
+"%PDF-1.3
+%����
+7 0 obj
+<<
+/Type /Page
+/Parent 1 0 R
+/MediaBox [0 0 595.280029 841.890015]
+/Contents 5 0 R
+/Resources 6 0 R
+>>
+endobj
+6 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+>>
+endobj
+5 0 obj
+<<
+/Length 595
+>>
+stream
+1 0 0 -1 0 841.890015 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+q
+0 3 m
+12 3 l
+12 3 12 3 12 3 c
+12 15 l
+12 15 12 15 12 15 c
+0 15 l
+0 15 0 15 0 15 c
+0 3 l
+0 3 0 3 0 3 c
+h
+W n
+1 0 0 1 0 3 cm
+0.023438 0 0 0.023438 0 0 cm
+1 0 0 1 0 0 cm
+q
+/DeviceRGB cs
+0 0 0 scn
+464 128 m
+272 128 l
+217.37 73.37 l
+211.37 67.37 203.23 64 194.74 64 c
+48 64 l
+21.49 64 0 85.49 0 112 c
+0 400 l
+0 426.51 21.49 448 48 448 c
+464 448 l
+490.51 448 512 426.51 512 400 c
+512 176 l
+512 149.49 490.51 128 464 128 c
+h
+464 400 m
+48 400 l
+48 112 l
+188.12 112 l
+242.75 166.63 l
+248.75 172.63 256.89 176 265.38 176 c
+464 176 l
+464 400 l
+h
+f
+Q
+Q
+Q
+Q
+Q
+
+endstream
+endobj
+9 0 obj
+(react-pdf)
+endobj
+10 0 obj
+(react-pdf)
+endobj
+11 0 obj
+(D:20210414183756Z)
+endobj
+8 0 obj
+<<
+/Producer 9 0 R
+/Creator 10 0 R
+/CreationDate 11 0 R
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/Names 2 0 R
+/ViewerPreferences 4 0 R
+>>
+endobj
+1 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [7 0 R]
+>>
+endobj
+2 0 obj
+<<
+/Dests <<
+  /Names [
+]
+>>
+>>
+endobj
+4 0 obj
+<<
+/DisplayDocTitle true
+>>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000001098 00000 n 
+0000001155 00000 n 
+0000001011 00000 n 
+0000001202 00000 n 
+0000000200 00000 n 
+0000000133 00000 n 
+0000000015 00000 n 
+0000000937 00000 n 
+0000000846 00000 n 
+0000000873 00000 n 
+0000000901 00000 n 
+trailer
+<<
+/Size 12
+/Root 3 0 R
+/Info 8 0 R
+>>
+startxref
+1245
+%%EOF
+"
+`;

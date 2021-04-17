@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Rail/> should render 1`] = `
+"%PDF-1.3
+%����
+8 0 obj
+<<
+/Type /ExtGState
+/ca 1
+>>
+endobj
+7 0 obj
+<<
+/Type /Page
+/Parent 1 0 R
+/MediaBox [0 0 595.280029 841.890015]
+/Contents 5 0 R
+/Resources 6 0 R
+>>
+endobj
+6 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/ExtGState <<
+/Gs1 8 0 R
+>>
+>>
+endobj
+5 0 obj
+<<
+/Length 828
+>>
+stream
+1 0 0 -1 0 841.890015 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+q
+19 0 m
+21 0 l
+21 0 21 0 21 0 c
+21 40 l
+21 40 21 40 21 40 c
+19 40 l
+19 40 19 40 19 40 c
+19 0 l
+19 0 19 0 19 0 c
+h
+W n
+/Gs1 gs
+/DeviceRGB cs
+0 0 0 scn
+19 0 2 40 re
+f
+Q
+q
+1 0 0 1 19 0 cm
+Q
+Q
+q
+q
+1 0 0 1 15 40 cm
+q
+q
+0 0 m
+10 0 l
+10 0 10 0 10 0 c
+10 10 l
+10 10 10 10 10 10 c
+0 10 l
+0 10 0 10 0 10 c
+0 0 l
+0 0 0 0 0 0 c
+h
+W n
+1 0 0 1 0 0 cm
+0.1 0 0 0.1 0 0 cm
+1 0 0 1 0 0 cm
+q
+15 w
+/DeviceRGB CS
+0 0 0 SCN
+10 50 m
+10 27.90861 27.90861 10 50 10 c
+72.09139 10 90 27.90861 90 50 c
+90 72.09139 72.09139 90 50 90 c
+27.90861 90 10 72.09139 10 50 c
+h
+S
+Q
+Q
+Q
+Q
+Q
+q
+q
+19 50 m
+21 50 l
+21 50 21 50 21 50 c
+21 50 l
+21 50 21 50 21 50 c
+19 50 l
+19 50 19 50 19 50 c
+19 50 l
+19 50 19 50 19 50 c
+h
+W n
+/Gs1 gs
+/DeviceRGB cs
+0 0 0 scn
+19 50 2 0 re
+f
+Q
+q
+1 0 0 1 19 50 cm
+Q
+Q
+Q
+Q
+Q
+Q
+
+endstream
+endobj
+10 0 obj
+(react-pdf)
+endobj
+11 0 obj
+(react-pdf)
+endobj
+12 0 obj
+(D:20210414183756Z)
+endobj
+9 0 obj
+<<
+/Producer 10 0 R
+/Creator 11 0 R
+/CreationDate 12 0 R
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/Names 2 0 R
+/ViewerPreferences 4 0 R
+>>
+endobj
+1 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [7 0 R]
+>>
+endobj
+2 0 obj
+<<
+/Dests <<
+  /Names [
+]
+>>
+>>
+endobj
+4 0 obj
+<<
+/DisplayDocTitle true
+>>
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000001405 00000 n 
+0000001462 00000 n 
+0000001318 00000 n 
+0000001509 00000 n 
+0000000272 00000 n 
+0000000177 00000 n 
+0000000059 00000 n 
+0000000015 00000 n 
+0000001243 00000 n 
+0000001151 00000 n 
+0000001179 00000 n 
+0000001207 00000 n 
+trailer
+<<
+/Size 13
+/Root 3 0 R
+/Info 9 0 R
+>>
+startxref
+1552
+%%EOF
+"
+`;
