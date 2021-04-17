@@ -17,5 +17,6 @@ export { default as IconStar } from "./components/icon-star";
 export { default as IconInfo } from "./components/icon-info";
 export { default as IconFolder } from "./components/icon-folder";
 export { default as IconGithub } from "./components/icon-github";
+export { default as Rail } from "./components/rail";
 
 export * as ReactPDF from "@react-pdf/renderer";
