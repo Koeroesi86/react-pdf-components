@@ -42,7 +42,7 @@ Page.propTypes = {
 Page.defaultProps = {
   size: "A4",
   justifyContent: "space-between",
-  fontFamily: 'inherit',
+  fontFamily: 'Helvetica',
   children: null,
 };
 
