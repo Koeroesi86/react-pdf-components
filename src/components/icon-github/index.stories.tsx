@@ -17,8 +17,9 @@ export default {
     height: 12,
     color: "#000",
   },
-} as Meta<IconGithubComponentProps>;
+} as Meta<typeof IconGithub>;
 
+// eslint-disable-next-line react/function-component-definition
 const Template: Story<IconGithubComponentProps> = (args) => (
   <IconGithub {...args} />
 );

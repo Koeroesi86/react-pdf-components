@@ -6,30 +6,31 @@ export interface DocumentComponentProps {
   title?: string;
   author?: string;
   keywords?: string;
+  children?: React.ReactElement,
 }
 
-const Document: React.FC<DocumentComponentProps> = ({
-  // eslint-disable-next-line react/prop-types
-  children,
-  title,
-  author,
-  keywords,
-}) => (
-  <ReactDocument title={title} author={author} keywords={keywords}>
-    {children}
-  </ReactDocument>
-);
+function Document({
+  children, title, author, keywords,
+}: DocumentComponentProps) {
+  return (
+    <ReactDocument title={title} author={author} keywords={keywords}>
+      {children}
+    </ReactDocument>
+  );
+}
 
 Document.propTypes = {
   title: PropTypes.string,
   author: PropTypes.string,
   keywords: PropTypes.string,
+  children: PropTypes.node,
 };
 
 Document.defaultProps = {
   title: "",
   author: "",
   keywords: "",
+  children: null,
 };
 
 export default Document;

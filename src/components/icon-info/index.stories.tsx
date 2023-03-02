@@ -17,8 +17,9 @@ export default {
     height: 12,
     color: "#000",
   },
-} as Meta<IconInfoComponentProps>;
+} as Meta<typeof IconInfo>;
 
+// eslint-disable-next-line react/function-component-definition
 const Template: Story<IconInfoComponentProps> = (args) => (
   <IconInfo {...args} />
 );

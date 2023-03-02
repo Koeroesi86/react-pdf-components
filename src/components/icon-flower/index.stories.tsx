@@ -17,8 +17,9 @@ export default {
     height: 12,
     color: "#000",
   },
-} as Meta<IconFlowerComponentProps>;
+} as Meta<typeof IconFlower>;
 
+// eslint-disable-next-line react/function-component-definition
 const Template: Story<IconFlowerComponentProps> = (args) => (
   <IconFlower {...args} />
 );

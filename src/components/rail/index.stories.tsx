@@ -23,8 +23,9 @@ export default {
     endSize: 40,
     orientation: "column",
   },
-} as Meta<RailComponentProps>;
+} as Meta<typeof Rail>;
 
+// eslint-disable-next-line react/function-component-definition
 const Template: Story<RailComponentProps> = (args) => <Rail {...args} />;
 
 export const Default = Template.bind({});

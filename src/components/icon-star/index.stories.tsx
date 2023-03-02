@@ -17,8 +17,9 @@ export default {
     height: 12,
     color: "#000",
   },
-} as Meta<IconStarComponentProps>;
+} as Meta<typeof IconStar>;
 
+// eslint-disable-next-line react/function-component-definition
 const Template: Story<IconStarComponentProps> = (args) => (
   <IconStar {...args} />
 );

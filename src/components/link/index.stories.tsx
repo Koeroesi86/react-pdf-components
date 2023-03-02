@@ -18,8 +18,9 @@ export default {
     color: "#000",
     underline: false,
   },
-} as Meta<LinkComponentProps>;
+} as Meta<typeof Link>;
 
+// eslint-disable-next-line react/function-component-definition
 const Template: Story<LinkComponentProps> = (args) => (
   <Link {...args}>
     <Text>test</Text>

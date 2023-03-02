@@ -38,8 +38,9 @@ export default {
     width: 60,
     height: 60,
   },
-} as Meta<BlockComponentProps>;
+} as Meta<typeof Block>;
 
+// eslint-disable-next-line react/function-component-definition
 const Template: Story<BlockComponentProps> = (args) => <Block {...args} />;
 
 export const Default = Template.bind({});

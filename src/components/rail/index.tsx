@@ -22,26 +22,23 @@ const getSizes = (size: Size, orientation: Orientation) =>
     ? { width: 2, ...parseSize(size, "height") }
     : { height: 2, ...parseSize(size, "width") };
 
-const Rail: React.FC<RailComponentProps> = ({
-  size,
-  iconSize,
-  color,
-  startSize,
-  endSize,
-  orientation,
-}) => (
-  <Block
-    flexDirection={orientation}
-    alignItems="center"
-    {...(orientation === "column" ? { width: size } : { height: size })}
-  >
-    <Block backgroundColor={color} {...getSizes(startSize, orientation)} />
-    <Block>
-      <IconRing width={iconSize} height={iconSize} color={color} />
+function Rail({
+  size, iconSize, color, startSize, endSize, orientation,
+}: RailComponentProps) {
+  return (
+    <Block
+      flexDirection={orientation}
+      alignItems="center"
+      {...(orientation === "column" ? { width: size } : { height: size })}
+    >
+      <Block backgroundColor={color} {...getSizes(startSize, orientation)} />
+      <Block>
+        <IconRing width={iconSize} height={iconSize} color={color} />
+      </Block>
+      <Block backgroundColor={color} {...getSizes(endSize, orientation)} />
     </Block>
-    <Block backgroundColor={color} {...getSizes(endSize, orientation)} />
-  </Block>
-);
+  );
+}
 
 Rail.propTypes = {
   size: PropTypes.number,

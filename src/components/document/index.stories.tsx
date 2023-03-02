@@ -10,8 +10,9 @@ export default {
     author: { control: "text" },
     keywords: { control: "text" },
   },
-} as Meta<DocumentComponentProps>;
+} as Meta<typeof Document>;
 
+// eslint-disable-next-line react/function-component-definition
 const Template: Story<DocumentComponentProps> = (args) => (
   <Document {...args} />
 );

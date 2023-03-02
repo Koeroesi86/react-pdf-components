@@ -9,40 +9,41 @@ export interface PageComponentProps {
   size?: PageSizes;
   justifyContent?: jc;
   fontFamily?: string;
+  children?: React.ReactElement;
 }
 
-const Page: React.FC<PageComponentProps> = ({
-  // eslint-disable-next-line react/prop-types
-  children,
-  size,
-  justifyContent,
-  fontFamily,
-}) => (
-  <P
-    size={size}
-    style={{
-      flexDirection: "column",
-      justifyContent,
-      backgroundColor: "#ffffff",
-      fontFamily,
-      paddingLeft: 40,
-      paddingRight: 40,
-    }}
-  >
-    {children}
-  </P>
-);
+function Page({
+  children, size, justifyContent, fontFamily,
+}: PageComponentProps) {
+  return (
+    <P
+      size={size}
+      style={{
+        flexDirection: "column",
+        justifyContent,
+        backgroundColor: "#ffffff",
+        fontFamily,
+        paddingLeft: 40,
+        paddingRight: 40,
+      }}
+    >
+      {children}
+    </P>
+  );
+}
 
 Page.propTypes = {
   size: PropTypes.oneOf(["A4"]),
   justifyContent: PropTypes.oneOf(justifyContentImport),
-  // eslint-disable-next-line react/require-default-props
   fontFamily: PropTypes.string,
+  children: PropTypes.node,
 };
 
 Page.defaultProps = {
   size: "A4",
   justifyContent: "space-between",
+  fontFamily: 'inherit',
+  children: null,
 };
 
 export default Page;

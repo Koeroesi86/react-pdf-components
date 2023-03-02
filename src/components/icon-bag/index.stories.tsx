@@ -17,8 +17,9 @@ export default {
     height: 12,
     color: "#000",
   },
-} as Meta<IconBagComponentProps>;
+} as Meta<typeof IconBag>;
 
+// eslint-disable-next-line react/function-component-definition
 const Template: Story<IconBagComponentProps> = (args) => <IconBag {...args} />;
 
 export const Default = Template.bind({});

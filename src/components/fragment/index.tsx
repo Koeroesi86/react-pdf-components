@@ -5,7 +5,10 @@ export interface FragmentComponentProps {
   node: string;
 }
 
-const Fragment: React.FC<FragmentComponentProps> = ({ node }) => <>{node}</>;
+function Fragment({ node }) {
+  // eslint-disable-next-line react/jsx-no-useless-fragment
+  return <>{node}</>;
+}
 
 Fragment.propTypes = {
   node: PropTypes.string.isRequired,

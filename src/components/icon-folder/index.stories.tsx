@@ -17,8 +17,9 @@ export default {
     height: 12,
     color: "#000",
   },
-} as Meta<IconFolderComponentProps>;
+} as Meta<typeof IconFolder>;
 
+// eslint-disable-next-line react/function-component-definition
 const Template: Story<IconFolderComponentProps> = (args) => (
   <IconFolder {...args} />
 );

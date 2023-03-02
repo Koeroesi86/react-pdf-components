@@ -27,28 +27,30 @@ export interface BlockComponentProps {
   justifyContent?: jc;
   alignItems?: ai;
   overflow?: "hidden";
+  children?: React.ReactElement | React.ReactElement[];
 }
 
-// eslint-disable-next-line react/prop-types
-const Block: React.FC<BlockComponentProps> = ({ children, ...props }) => (
-  <View
-    id={props.id}
-    style={{
-      position: props.position,
-      width: props.width,
-      height: props.height,
-      backgroundColor: props.backgroundColor,
-      flexGrow: props.flexGrow || 0,
-      flexDirection: props.flexDirection,
-      justifyContent: props.justifyContent,
-      alignItems: props.alignItems,
-      overflow: props.overflow,
-      flexWrap: "wrap",
-    }}
-  >
-    {children}
-  </View>
-);
+function Block({ children, ...props }: BlockComponentProps) {
+  return (
+    <View
+      id={props.id}
+      style={{
+        position: props.position,
+        width: props.width,
+        height: props.height,
+        backgroundColor: props.backgroundColor,
+        flexGrow: props.flexGrow || 0,
+        flexDirection: props.flexDirection,
+        justifyContent: props.justifyContent,
+        alignItems: props.alignItems,
+        overflow: props.overflow,
+        flexWrap: "wrap",
+      }}
+    >
+      {children}
+    </View>
+  );
+}
 
 Block.propTypes = {
   /* eslint-disable react/require-default-props */
@@ -64,6 +66,7 @@ Block.propTypes = {
   justifyContent: PropTypes.oneOf(justifyContent),
   alignItems: PropTypes.oneOf(alignItems),
   overflow: PropTypes.oneOf(overflow),
+  children: PropTypes.oneOfType([PropTypes.element, PropTypes.arrayOf(PropTypes.element)]),
 };
 
 export default Block;

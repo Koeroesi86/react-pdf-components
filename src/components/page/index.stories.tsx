@@ -13,8 +13,9 @@ export default {
   args: {
     size: "A4",
   },
-} as Meta<PageComponentProps>;
+} as Meta<typeof Page>;
 
+// eslint-disable-next-line react/function-component-definition
 const Template: Story<PageComponentProps> = (args) => (
   <PdfWrapper width="100%" height="100%">
     <Document>

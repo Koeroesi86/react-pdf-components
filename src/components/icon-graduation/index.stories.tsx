@@ -17,8 +17,9 @@ export default {
     height: 12,
     color: "#000",
   },
-} as Meta<IconGraduationComponentProps>;
+} as Meta<typeof IconGraduation>;
 
+// eslint-disable-next-line react/function-component-definition
 const Template: Story<IconGraduationComponentProps> = (args) => (
   <IconGraduation {...args} />
 );

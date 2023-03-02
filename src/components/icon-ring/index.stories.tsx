@@ -17,8 +17,9 @@ export default {
     height: 12,
     color: "#000",
   },
-} as Meta<IconRingComponentProps>;
+} as Meta<typeof IconRing>;
 
+// eslint-disable-next-line react/function-component-definition
 const Template: Story<IconRingComponentProps> = (args) => (
   <IconRing {...args} />
 );

@@ -17,8 +17,9 @@ export default {
     height: 12,
     color: "#000",
   },
-} as Meta<IconFlameComponentProps>;
+} as Meta<typeof IconFlame>;
 
+// eslint-disable-next-line react/function-component-definition
 const Template: Story<IconFlameComponentProps> = (args) => (
   <IconFlame {...args} />
 );

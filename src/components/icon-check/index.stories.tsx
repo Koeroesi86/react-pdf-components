@@ -17,8 +17,9 @@ export default {
     height: 12,
     color: "#000",
   },
-} as Meta<IconCheckComponentProps>;
+} as Meta<typeof IconCheck>;
 
+// eslint-disable-next-line react/function-component-definition
 const Template: Story<IconCheckComponentProps> = (args) => (
   <IconCheck {...args} />
 );

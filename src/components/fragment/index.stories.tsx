@@ -11,10 +11,12 @@ export default {
   argTypes: {
     node: { control: "text" },
   },
-} as Meta<FragmentComponentProps>;
+} as Meta<typeof Fragment>;
 
+// eslint-disable-next-line react/function-component-definition
 const Template: Story<FragmentComponentProps> = (args) => (
   <Text>
+    {/* eslint-disable-next-line react/jsx-no-useless-fragment */}
     <Fragment {...args} />
   </Text>
 );

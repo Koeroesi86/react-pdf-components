@@ -17,8 +17,9 @@ export default {
     height: 12,
     color: "#000",
   },
-} as Meta<IconArrowRightComponentProps>;
+} as Meta<typeof IconArrowRight>;
 
+// eslint-disable-next-line react/function-component-definition
 const Template: Story<IconArrowRightComponentProps> = (args) => (
   <IconArrowRight {...args} />
 );

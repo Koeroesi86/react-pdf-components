@@ -10,33 +10,30 @@ export interface TextComponentProps {
   lineHeight?: number;
   underline?: boolean;
   align?: "left" | "center" | "right";
+  children?: React.ReactElement;
 }
 
-const Text: React.FC<TextComponentProps> = ({
-  // eslint-disable-next-line react/prop-types
-  children,
-  color,
-  size,
-  lineHeight,
-  weight,
-  align,
-  text,
-}) => (
-  <ReactPDFText
-    style={{
-      color,
-      fontSize: size,
-      fontWeight: weight,
-      textAlign: align,
-      lineHeight,
-      textOverflow: "ellipsis",
-    }}
-    hyphenationCallback={(a) => [a]}
-  >
-    {text || null}
-    {children}
-  </ReactPDFText>
-);
+function Text({
+  children, color, size, lineHeight, weight, align, text, underline
+}: TextComponentProps) {
+  return (
+    <ReactPDFText
+      style={{
+        color,
+        fontSize: size,
+        fontWeight: weight,
+        textAlign: align,
+        lineHeight,
+        textOverflow: "ellipsis",
+        textDecoration: underline ? 'underline' : undefined,
+      }}
+      hyphenationCallback={(a) => [a]}
+    >
+      {text || null}
+      {children}
+    </ReactPDFText>
+  );
+}
 
 Text.propTypes = {
   text: PropTypes.string,
@@ -45,6 +42,8 @@ Text.propTypes = {
   weight: PropTypes.number,
   lineHeight: PropTypes.number,
   align: PropTypes.oneOf(["left", "center", "right"]),
+  underline: PropTypes.bool,
+  children: PropTypes.node,
 };
 
 Text.defaultProps = {
@@ -54,6 +53,8 @@ Text.defaultProps = {
   align: "left",
   weight: 400,
   lineHeight: 1,
+  underline: false,
+  children: null,
 };
 
 export default Text;

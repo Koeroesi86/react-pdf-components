@@ -6,33 +6,33 @@ export interface LinkComponentProps {
   src: string;
   color?: string;
   underline?: boolean;
+  children?: React.ReactElement;
 }
 
-const Link: React.FC<LinkComponentProps> = ({
-  // eslint-disable-next-line react/prop-types
-  children,
-  src,
-  color,
-  underline,
-}) => (
-  <L
-    src={src}
-    // @ts-ignore
-    style={{ color, textDecoration: underline ? "underline" : "unset" }}
-  >
-    {children}
-  </L>
-);
+function Link({
+  children, src, color, underline,
+}: LinkComponentProps) {
+  return (
+    <L
+      src={src}
+      style={{ color, textDecoration: underline ? "underline" : "none" }}
+    >
+      {children}
+    </L>
+  );
+}
 
 Link.propTypes = {
   src: PropTypes.string.isRequired,
   color: PropTypes.string,
   underline: PropTypes.bool,
+  children: PropTypes.node,
 };
 
 Link.defaultProps = {
   underline: true,
   color: "#000",
+  children: null,
 };
 
 export default Link;
