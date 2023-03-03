@@ -5,7 +5,7 @@
     "noImplicitAny": false,
     "declaration": true,
     "module": "es6",
-    "types": ["node", "jest"],
+    "types": ["node", "jest", "prop-types"],
     "moduleResolution": "node",
     "target": "es2018",
     "jsx": "react",

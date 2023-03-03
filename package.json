@@ -15,8 +15,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "yarn install --frozen-lockfile && rm -rf ./dist && webpack",
-    "build:types": "dts-bundle-generator --config dts.config.js",
+    "build": "yarn install --frozen-lockfile && rm -rf ./dist && dts-bundle-generator --config dts.config.js && webpack",
     "dev": "yarn build && webpack --watch --progress",
     "test": "jest",
     "lint": "eslint --cache --cache-location .cache/eslint/ --ext .ts,.tsx src",

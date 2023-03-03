@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "@react-pdf/renderer";
-import PropTypes from "prop-types";
+import * as PropTypes from "prop-types";
 import {
   ai,
   alignItems,
