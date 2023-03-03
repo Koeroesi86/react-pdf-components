@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<IconArrowRight/> should render 1`] = `
+"%PDF-1.3
+%����
+8 0 obj
+<<
+/Type /Page
+/Parent 1 0 R
+/MediaBox [0 0 595.280029 841.890015]
+/Contents 6 0 R
+/Resources 7 0 R
+/UserUnit 1
+>>
+endobj
+7 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+>>
+endobj
+10 0 obj
+(react-pdf)
+endobj
+11 0 obj
+(react-pdf)
+endobj
+12 0 obj
+(D:20210414183756Z)
+endobj
+9 0 obj
+<<
+/Producer 10 0 R
+/Creator 11 0 R
+/CreationDate 12 0 R
+>>
+endobj
+4 0 obj
+<<
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/Names 2 0 R
+/ViewerPreferences 5 0 R
+>>
+endobj
+1 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [8 0 R]
+>>
+endobj
+2 0 obj
+<<
+/Dests <<
+  /Names [
+]
+>>
+>>
+endobj
+5 0 obj
+<<
+/DisplayDocTitle true
+>>
+endobj
+6 0 obj
+<<
+/Length 291
+/Filter /FlateDecode
+>>
+stream
+x�]�MN�1��=J��ĵn<@3F�o&1�x~i��MS���9��q!��3)�s��E3���(C�s"���f�8��e���G�LMw3}v\\��wO��.w���1s����O�]�lg}|>�|�����k�5p�Į(Հ+c��i�T�*��qª
+B���P��V�F���"�, "hR���*HQ�#����B-j�X�ƣ��f
+�E햦LȪ[�(H�k�@�D�M$:Hv4��K���1Hǵl�K�Ҿ=KP��y�7AG�Gl�������>��~�0t�
+endstream
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000000487 00000 n 
+0000000544 00000 n 
+0000000400 00000 n 
+0000000379 00000 n 
+0000000591 00000 n 
+0000000634 00000 n 
+0000000145 00000 n 
+0000000015 00000 n 
+0000000304 00000 n 
+0000000212 00000 n 
+0000000240 00000 n 
+0000000268 00000 n 
+trailer
+<<
+/Size 13
+/Root 3 0 R
+/Info 9 0 R
+/ID [<89bd153f05caf3c6700333c680a70f52> <89bd153f05caf3c6700333c680a70f52>]
+>>
+startxref
+997
+%%EOF
+"
+`;

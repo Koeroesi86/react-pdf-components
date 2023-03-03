@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "outDir": "./dist/",
+    "noImplicitAny": false,
+    "declaration": true,
+    "module": "es6",
+    "types": ["node", "jest", "prop-types"],
+    "moduleResolution": "node",
+    "target": "es2018",
+    "jsx": "react",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "paths": {
+      "@app-types": ["types.ts"],
+      "@test-helpers": ["test-helpers/index.tsx"],
+      "@stories": ["stories/index.tsx"]
+    }
+  }
+}
