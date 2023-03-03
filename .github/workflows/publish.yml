@@ -1,10 +1,12 @@
+name: Publish
+
 on: 
   push:
     branches:    
       - main
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -13,10 +15,19 @@ jobs:
           node-version: '18'
           cache: 'yarn'
           registry-url: 'https://registry.npmjs.org'
-      - run: yarn install --frozen-lockfile
-      - run: yarn lint
-      - run: yarn test
-      - run: yarn build
-      - run: npm publish
+      - name: Setup
+        run: yarn install --frozen-lockfile
+      - name: Lint
+        run: yarn lint
+      - name: Test
+        run: yarn test
+      - name: Package version
+        run: yarn generate-version
+      # - name: Storybook build
+      #   run: yarn build-storybook
+      - name: Package bundle
+        run: yarn build
+      - name: Publish package
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
