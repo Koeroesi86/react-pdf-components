@@ -5,7 +5,7 @@ export interface FragmentComponentProps {
   node: string;
 }
 
-function Fragment({ node }) {
+function Fragment({ node }: FragmentComponentProps) {
   // eslint-disable-next-line react/jsx-no-useless-fragment
   return <>{node}</>;
 }
