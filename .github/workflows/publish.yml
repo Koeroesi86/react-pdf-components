@@ -33,6 +33,12 @@ jobs:
         run: yarn build-storybook
       - name: Package bundle
         run: yarn build
+      - name: Deploy Storybook
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: storybook
       - name: Publish package
         run: npm publish
         env:
