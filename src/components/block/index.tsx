@@ -7,6 +7,8 @@ import {
   fd,
   flexDirection,
   flexGrow,
+  flexWrap,
+  fw,
   jc,
   justifyContent,
   overflow,
@@ -26,27 +28,14 @@ export interface BlockComponentProps {
   flexDirection?: fd;
   justifyContent?: jc;
   alignItems?: ai;
+  flexWrap?: fw;
   overflow?: "hidden";
   children?: React.ReactElement | React.ReactElement[];
 }
 
-function Block({ children, ...props }: BlockComponentProps) {
+function Block({ children, id, ...props }: BlockComponentProps) {
   return (
-    <View
-      id={props.id}
-      style={{
-        position: props.position,
-        width: props.width,
-        height: props.height,
-        backgroundColor: props.backgroundColor,
-        flexGrow: props.flexGrow || 0,
-        flexDirection: props.flexDirection,
-        justifyContent: props.justifyContent,
-        alignItems: props.alignItems,
-        overflow: props.overflow,
-        flexWrap: "wrap",
-      }}
-    >
+    <View id={id} style={props}>
       {children}
     </View>
   );
@@ -63,10 +52,16 @@ Block.propTypes = {
   backgroundColor: PropTypes.string,
   flexGrow: PropTypes.oneOf(flexGrow),
   flexDirection: PropTypes.oneOf(flexDirection),
+  flexWrap: PropTypes.oneOf(flexWrap),
   justifyContent: PropTypes.oneOf(justifyContent),
   alignItems: PropTypes.oneOf(alignItems),
   overflow: PropTypes.oneOf(overflow),
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.arrayOf(PropTypes.element)]),
 };
+
+Block.defaultProps = {
+  flexGrow: 0,
+  flexWrap: "wrap",
+}
 
 export default Block;

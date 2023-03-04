@@ -5,6 +5,7 @@ import {
   alignItems,
   flexDirection,
   flexGrow,
+  flexWrap,
   justifyContent,
   overflow,
 } from "@app-types";
@@ -23,6 +24,7 @@ export default {
     id: { control: "text" },
     flexGrow: { type: "select", options: [undefined, ...flexGrow] },
     flexDirection: { type: "select", options: [undefined, ...flexDirection] },
+    flexWrap: { type: "select", options: [undefined, ...flexWrap] },
     justifyContent: {
       type: "select",
       options: [undefined, ...justifyContent],

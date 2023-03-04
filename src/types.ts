@@ -9,6 +9,7 @@ export interface IconProps {
 // primitive types
 export type pos = "absolute" | "relative";
 export type fd = "row" | "column";
+export type fw = 'nowrap' | 'wrap' | 'wrap-reverse';
 export type jc =
   | "flex-start"
   | "flex-end"
@@ -23,6 +24,7 @@ export type o = "hidden";
 export const position: pos[] = ["absolute", "relative"];
 export const flexGrow = [0, 1];
 export const flexDirection: fd[] = ["row", "column"];
+export const flexWrap: fw[] = ['nowrap', 'wrap', 'wrap-reverse'];
 export const justifyContent: jc[] = [
   "flex-start",
   "flex-end",
